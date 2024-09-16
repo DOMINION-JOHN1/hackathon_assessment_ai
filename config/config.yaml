@@ -1,0 +1,3 @@
+openai_api_key: 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
+log_level: INFO
+log_file: logs/logger.log

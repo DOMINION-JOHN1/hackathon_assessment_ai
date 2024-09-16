@@ -1,0 +1,8 @@
+nbformat==5.10.4
+openai==1.43.0
+PyYAML==6.0.2
+langchain_openai
+requests
+langchain-core
+langchain
+Flask==3.0.2

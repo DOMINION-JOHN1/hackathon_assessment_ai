@@ -1,0 +1,7 @@
+# IDE configuration files
+.vscode/
+.idea/
+# Compiled Python files
+*.pyc
+*.pyo
+.env
