@@ -7,7 +7,7 @@ class NotebookReader:
 
     def read_notebook(self, notebook_path):
         try:
-            notebook_content = notebook_path.getvalue().decode('utf-8')
+            notebook_content = notebook_path.read().decode('utf-8')
             nb = nbformat.reads(notebook_content, as_version=nbformat.NO_CONVERT)
             #with open(notebook_path, 'r', encoding='utf-8') as f:
             #nb = nbformat.read(f, as_version=nbformat.NO_CONVERT)
