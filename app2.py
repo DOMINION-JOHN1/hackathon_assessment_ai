@@ -19,7 +19,7 @@ def main():
     # File uploader for Jupyter Notebooks
     uploaded_file = st.file_uploader("Choose a Jupyter Notebook file", type="ipynb")
 
-    if uploaded_file is not None:
+    if uploaded_file is None:
         # Save the uploaded file temporarily
         with tempfile.NamedTemporaryFile(delete=False, suffix=".ipynb") as temp_file:
             temp_file.write(uploaded_file.read())
