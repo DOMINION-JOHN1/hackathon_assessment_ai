@@ -1,3 +1,3 @@
-openai_api_key: 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
+GEMINI_API_KEY: AIzaSyBcYmBhomoR8Fmq92MNNh8_66kwI9DK49U
 log_level: INFO
 log_file: logs/logger.log
