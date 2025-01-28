@@ -8,7 +8,7 @@ class AIFeedbackSystem:
     def __init__(self, config):
         self.logger = logging.getLogger(__name__)
         self.notebook_reader = NotebookReader()
-        self.llm_analyzer = LLMAnalyzer(config['openai_api_key'])
+        self.llm_analyzer = LLMAnalyzer(config['GEMINI_API_KEY'])
 
     def evaluate_notebook(self, notebook_path):
         try:
