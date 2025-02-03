@@ -46,4 +46,4 @@ class LLMAnalyzer:
 
         formatted_prompt = prompt.format(context="Ensure to follow every instructions in prompt", question="Here is the notebook for review" + content)
         response = self.model.invoke(formatted_prompt)
-        return response
+        return response.content
