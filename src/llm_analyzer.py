@@ -7,7 +7,7 @@ import logging
 class LLMAnalyzer:
     def __init__(self, api_key):
         self.logger = logging.getLogger(__name__)
-        self.model = GoogleGenerativeAI(model="gemini-1.5-pro", google_api_key=api_key)
+        self.model = GoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
         #self.model = ChatOpenAI(openai_api_key=api_key, model="gpt-3.5-turbo")
 
     def _create_prompt(self, content):
