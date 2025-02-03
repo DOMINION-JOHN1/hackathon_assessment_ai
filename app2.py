@@ -17,7 +17,7 @@ def main():
     st.write("Upload a Jupyter Notebook (.ipynb) file to receive feedback.")
 
     # File uploader for Jupyter Notebooks
-    uploaded_file = st.file_uploader("Choose a Jupyter Notebook file", type="json")
+    uploaded_file = st.file_uploader("Choose a Jupyter Notebook file", type="ipynb")
 
     if uploaded_file is not None:
         # Save the uploaded file temporarily
