@@ -23,6 +23,8 @@ class LLMAnalyzer:
             After which you should provide a total score  in percentage (which is a Total sum of all the scores for each
              criterion and please not the total average of the Total criteria score)
             For each criterion, explain why you gave that score and provide specific suggestions for improvement.
+            Here is the notebook content:
+            {notebook_content}
 
             Respond in the following JSON format that wil enable me to call a particular key:
             {{
@@ -43,7 +45,6 @@ class LLMAnalyzer:
 
             """
         prompt = PromptTemplate.from_template(prompt)
-
-        formatted_prompt = prompt.format(context="Ensure to follow every instructions in prompt", question="Here is the notebook for review" + content)
+        formatted_prompt = prompt.format(notebook_content=content)
         response = self.model.invoke(formatted_prompt)
-        return response
+        return response.content
