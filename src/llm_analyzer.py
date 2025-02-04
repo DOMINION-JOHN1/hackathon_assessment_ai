@@ -47,4 +47,4 @@ class LLMAnalyzer:
         prompt = PromptTemplate.from_template(prompt)
         formatted_prompt = prompt.format(notebook_content=content)
         response = self.model.invoke(formatted_prompt)
-        return response.content
+        return response
