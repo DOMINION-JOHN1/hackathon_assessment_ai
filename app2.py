@@ -21,7 +21,7 @@ def main():
 
     if uploaded_file is not None:
         # Save the uploaded file temporarily
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".json") as temp_file:
+        with tempfile.NamedTemporaryFile(delete=False) as temp_file:
             temp_file.write(uploaded_file.read())
             notebook_path = temp_file.name
 
